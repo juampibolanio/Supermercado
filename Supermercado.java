@@ -7,7 +7,6 @@ public class Supermercado {
         Scanner sc = new Scanner(System.in);
 
         Empleado empleado1 = new Empleado("Matias", "Martinez", 34790678, 5000);
-        Empleado empleado2 = new Empleado("Romina", "Heredia", 40567124, 5500);
         Random numAleatorio = new Random();
 
         System.out.println("-----------------] Bienvenido al supermercado [-----------------");
