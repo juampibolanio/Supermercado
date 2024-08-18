@@ -1,5 +1,3 @@
-package POO.Supermercado;
-
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Random;
@@ -18,7 +16,7 @@ public class Supermercado {
         System.out.print("- Ingrese su apellido: ");
         String apellidoCliente = sc.next();
         System.out.println();
-        System.out.print("- Ingrese su número de DNI (Sin guiones ni puntos): ");
+        System.out.print("- Ingrese su número de DNI: ");
         int dniCliente = sc.nextInt();
         System.out.println();
         System.out.println("-- Los clientes mayoristas pueden acceder hasta un 30% de descuento en su compra --");
@@ -36,7 +34,7 @@ public class Supermercado {
                 esMayorista = false;
                 break;
             } else {
-                System.out.println("--- Opción no válida. Ingrese un valor correcto ---");
+                System.out.println("--- Opción no válida. Intente nuevamente---");
                 System.out.println("--- ¿Usted es un cliente mayorista? ---");
                 System.out.println("--- [1] Sí ----------------------------- No [2] ---");
             }

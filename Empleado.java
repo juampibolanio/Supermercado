@@ -1,5 +1,3 @@
-package POO.Supermercado;
-
 class Empleado extends Humane {
 
     private double sueldo;

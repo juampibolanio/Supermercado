@@ -1,5 +1,3 @@
-package POO.Supermercado;
-
 class Transaccion{
     private Producto producto;
 

@@ -1,5 +1,3 @@
-package POO.Supermercado;
-
 public class Producto {
     private String nombre;
     private double precio;
