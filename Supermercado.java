@@ -7,6 +7,7 @@ public class Supermercado {
         Scanner sc = new Scanner(System.in);
 
         Empleado empleado1 = new Empleado("Matias", "Martinez", 34790678, 5000);
+        Empleado empleado2 = new Empleado("Romina", "Heredia", 40567124, 5500);
         Random numAleatorio = new Random();
 
         System.out.println("-----------------] Bienvenido al supermercado [-----------------");
@@ -19,7 +20,6 @@ public class Supermercado {
         System.out.print("- Ingrese su número de DNI: ");
         int dniCliente = sc.nextInt();
         System.out.println();
-        System.out.println("-- Los clientes mayoristas pueden acceder hasta un 30% de descuento en su compra --");
         System.out.println("--- ¿Usted es un cliente mayorista? Ingrese el número correspondiente ---");
         System.out.println("-------- [1] Sí ------------------------------- No [2] --------");
         System.out.println();
@@ -74,7 +74,7 @@ public class Supermercado {
             } else if (opcion == 2) {
                 compraEnProceso = false;
             } else {
-                System.out.println("-- Opción incorrecta. Vuelva a ingresar el valor --");
+                System.out.println("-- Opción incorrecta. Intente nuevamente --");
             }
         }
 
@@ -96,6 +96,7 @@ public class Supermercado {
         System.out.println();
 
         if (cliente1.isMayorista()) {
+            System.out.println("--- Por ser cliente mayorista tiene un descuento de 30% ---");
             double descuento = importeTotal * 0.30;
             importeTotal -= descuento;
         }
@@ -105,7 +106,7 @@ public class Supermercado {
         System.out.println("-- Presione ENTER para realizar el pago --");
         sc.nextLine(); 
         sc.nextLine();
-        System.out.println("-- ¡Pago realizado correctamente! --");
+        System.out.println("-- ¡Gracias por su compra! --");
         sc.close();
     }
 }
